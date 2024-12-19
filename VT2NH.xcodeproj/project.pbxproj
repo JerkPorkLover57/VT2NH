@@ -16,6 +16,21 @@
 			path = VT2NH;
 			sourceTree = "<group>";
 		};
+		551731342D149AE300D05CEE /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		551731422D149F9100D05CEE /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		551731462D14A06E00D05CEE /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +49,9 @@
 			children = (
 				551730D52D1498DF00D05CEE /* VT2NH */,
 				551730D42D1498DF00D05CEE /* Products */,
+				551731342D149AE300D05CEE /* Views */,
+				551731422D149F9100D05CEE /* Models */,
+				551731462D14A06E00D05CEE /* ViewModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +80,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				551730D52D1498DF00D05CEE /* VT2NH */,
+				551731342D149AE300D05CEE /* Views */,
+				551731422D149F9100D05CEE /* Models */,
+				551731462D14A06E00D05CEE /* ViewModels */,
 			);
 			name = VT2NH;
 			packageProductDependencies = (
