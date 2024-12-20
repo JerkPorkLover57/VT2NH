@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 // VT2NHApp.swift
+=======
+//  VT2NHApp.swift
+//  VT2NH
+//
+//  Created by Kevin Edwards on 12/19/24.
+//
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
 
 import SwiftUI
 
 @main
 struct VT2NHApp: App {
     
+<<<<<<< HEAD
     @StateObject private var vm = LocationsViewModel() // LocationsViewModel
     @State private var showSplash = true // Track whether to show splash screen or not
     
@@ -25,6 +34,18 @@ struct VT2NHApp: App {
                     LocationsView()
                         .environmentObject(vm) // Provide the ViewModel to the LocationsView
                 }
+=======
+    @StateObject private var vm = LocationsViewModel()
+    
+    var body: some Scene {
+        WindowGroup {
+            // Wrap both views in a container
+            VStack {
+                ContentView()
+                
+                LocationsView()
+                    .environmentObject(vm)
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
             }
         }
     }

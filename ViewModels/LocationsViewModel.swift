@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
 import Foundation
 import MapKit
 import SwiftUI
 
 class LocationsViewModel: ObservableObject {
+<<<<<<< HEAD
     
     // All loaded locations
     @Published var locations: [Location]
@@ -18,19 +22,33 @@ class LocationsViewModel: ObservableObject {
     
     // Current region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
+=======
+    @Published var locations: [Location]
+    @Published var mapLocation: Location {
+        didSet {
+            updateMapCameraPosition(location: mapLocation)
+        }
+    }
+    
+    @Published var mapCameraPosition: MapCameraPosition
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     // Show list of locations
     @Published var showLocationsList: Bool = false
     
+<<<<<<< HEAD
     // Show location detail via sheet
     @Published var sheetLocation: Location? = nil
     
+=======
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
     init() {
         let locations = LocationsDataService.locations
         self.locations = locations
         self.mapLocation = locations.first!
         
+<<<<<<< HEAD
         self.updateMapRegion(location: locations.first!)
     }
     
@@ -45,6 +63,29 @@ class LocationsViewModel: ObservableObject {
     func toggleLocationsList() {
         withAnimation(.easeInOut) {
 //            showLocationsList = !showLocationsList
+=======
+        self.mapCameraPosition = .region(
+            MKCoordinateRegion(
+                center: locations.first!.coordinates,
+                span: mapSpan
+            )
+        )
+    }
+    
+    private func updateMapCameraPosition(location: Location) {
+        withAnimation(.easeInOut) {
+            mapCameraPosition = .region(
+                MKCoordinateRegion(
+                    center: location.coordinates,
+                    span: mapSpan
+                )
+            )
+        }
+    }
+    
+    func toggleLocationList() {
+        withAnimation(.easeInOut) {
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
             showLocationsList.toggle()
         }
     }
@@ -55,6 +96,7 @@ class LocationsViewModel: ObservableObject {
             showLocationsList = false
         }
     }
+<<<<<<< HEAD
     
     func nextButtonPressed() {
         // Get the current index
@@ -79,3 +121,8 @@ class LocationsViewModel: ObservableObject {
     }
     
 }
+=======
+}
+
+
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e

@@ -21,6 +21,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		5517313C2D149BAC00D05CEE /* DataServices */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
 		551731422D149F9100D05CEE /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Models;
@@ -50,6 +58,10 @@
 				551730D52D1498DF00D05CEE /* VT2NH */,
 				551730D42D1498DF00D05CEE /* Products */,
 				551731342D149AE300D05CEE /* Views */,
+<<<<<<< HEAD
+=======
+				5517313C2D149BAC00D05CEE /* DataServices */,
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
 				551731422D149F9100D05CEE /* Models */,
 				551731462D14A06E00D05CEE /* ViewModels */,
 			);
@@ -81,6 +93,10 @@
 			fileSystemSynchronizedGroups = (
 				551730D52D1498DF00D05CEE /* VT2NH */,
 				551731342D149AE300D05CEE /* Views */,
+<<<<<<< HEAD
+=======
+				5517313C2D149BAC00D05CEE /* DataServices */,
+>>>>>>> 2ddb87d6ca1c66a916f627d8bad5583a7ee08d4e
 				551731422D149F9100D05CEE /* Models */,
 				551731462D14A06E00D05CEE /* ViewModels */,
 			);
